@@ -1,5 +1,13 @@
 FROM python:3.8
 
+# Add some extra tool
+RUN apt-get update && \
+    apt-get install nano
+    # Clean
+RUN apt-get clean && \
+    apt-get autoclean
+RUN rm -rf /var/lib/apt/lists/*
+
 # Setup environment
 RUN  cp /usr/local/bin/pip3.8 /usr/local/bin/pip3  # reenable pip3
 RUN pip3 install --upgrade pip
