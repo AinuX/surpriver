@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="350" src="figures/logo_custom.png">
-</p>
+
 # A Fork to correct dockerfile to Autobuild in dockerhub
 from Viking76 
 
