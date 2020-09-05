@@ -1,6 +1,7 @@
 version: "3"
 services:
   surpriver:
+    build: ./
     image: surpriver:latest
     container_name: surpriver
     restart: always
