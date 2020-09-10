@@ -3,6 +3,9 @@
 from Viking76
 In dockerhub :    viking74000/surpriver
 
+# Add ENVIRONNEMENT PARAMETER:
+CONFIG : "C:\\path\\to\\this\\dir>:/usr/src/app"
+
 To take me a beer BTC: 12bJ35Bw7ftuHZGjghwctzB1HrpgWtXFut
 
 
