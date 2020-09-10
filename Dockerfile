@@ -26,6 +26,4 @@ COPY . /usr/src/app
 VOLUME ["/usr/src/app"]
 
 RUN chmod +x /usr/src/app/docker-entrypoint.sh
-ENTRYPOINT ["/usr/src/app/docker-entrypoint.sh"]
-
-CMD [""]
+CMD ["/usr/src/app/docker-entrypoint.sh"]
