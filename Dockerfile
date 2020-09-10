@@ -1,6 +1,6 @@
 FROM python:3.8
 
-ENv CONFIG "C:\path\to\this\dir:/usr/src/app/"
+ENV CONFIG "C:\path\to\this\dir:/usr/src/app/"
 
 # Add some extra tool
 RUN apt-get update && \
