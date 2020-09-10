@@ -1,5 +1,7 @@
 FROM python:3.8
 
+VOLUME CONFIG "C:\path\to\this\dir:/usr/src/app/"
+
 # Add some extra tool
 RUN apt-get update && \
     apt-get install nano
@@ -22,8 +24,6 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Bundle app source
 COPY . /usr/src/app
-
-VOLUME ["/usr/src/app"]
 
 RUN chmod +x /usr/src/app/docker-entrypoint.sh
 CMD ["/usr/src/app/docker-entrypoint.sh"]
