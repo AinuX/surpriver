@@ -6,5 +6,5 @@ services:
     container_name: surpriver
     restart: always
     volumes:  
-    - ./volumes/surpriver:/usr/src/app
+    - CONFIG
     
